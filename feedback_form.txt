@@ -1,0 +1,242 @@
+<div class="mb-8 p-6 bg-gray-50 rounded-lg">
+            <h2 class="text-xl font-semibold text-gray-700 mb-4">Session Details</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <label for="sessionTitle" class="block text-sm font-medium text-gray-700">Session Title:</label>
+                    <input type="text" id="sessionTitle" name="sessionTitle" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm p-2">
+                </div>
+                <div>
+                    <label for="sessionDate" class="block text-sm font-medium text-gray-700">Date of Session:</label>
+                    <input type="date" id="sessionDate" name="sessionDate" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm p-2">
+                </div>
+                <div class="md:col-span-2">
+                    <label for="facilitatorName" class="block text-sm font-medium text-gray-700">Facilitator(s) Name:</label>
+                    <input type="text" id="facilitatorName" name="facilitatorName" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm p-2">
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-8 p-6 bg-gray-50 rounded-lg">
+            <h2 class="text-xl font-semibold text-gray-700 mb-4">Rating Specific Aspects</h2>
+            <p class="text-gray-600 mb-4">Please rate each aspect of the session on a scale of **1 to 5**, where:</p>
+            <ul class="list-disc list-inside text-gray-600 mb-6">
+                <li>**1** = Poor / Never</li>
+                <li>**2** = Fair / Rarely</li>
+                <li>**3** = Good / Sometimes</li>
+                <li>**4** = Very Good / Often</li>
+                <li>**5** = Excellent / Always</li>
+            </ul>
+
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-gray-100">
+                        <tr>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Specific Aspect</th>
+                            <th scope="col" class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">Session 1</th>
+                            <th scope="col" class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">Session 2</th>
+                            <th scope="col" class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">Session 3</th>
+                            <th scope="col" class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">Session 4</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Punctuality</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">
+                                <input type="number" name="punctuality_session1" min="1" max="5" class="rating-input">
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">
+                                <input type="number" name="punctuality_session2" min="1" max="5" class="rating-input">
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">
+                                <input type="number" name="punctuality_session3" min="1" max="5" class="rating-input">
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">
+                                <input type="number" name="punctuality_session4" min="1" max="5" class="rating-input">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Presentation Flow</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">
+                                <input type="number" name="presentationFlow_session1" min="1" max="5" class="rating-input">
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">
+                                <input type="number" name="presentationFlow_session2" min="1" max="5" class="rating-input">
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">
+                                <input type="number" name="presentationFlow_session3" min="1" max="5" class="rating-input">
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">
+                                <input type="number" name="presentationFlow_session4" min="1" max="5" class="rating-input">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Handling Questions</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">
+                                <input type="number" name="handlingQuestions_session1" min="1" max="5" class="rating-input">
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">
+                                <input type="number" name="handlingQuestions_session2" min="1" max="5" class="rating-input">
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">
+                                <input type="number" name="handlingQuestions_session3" min="1" max="5" class="rating-input">
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">
+                                <input type="number" name="handlingQuestions_session4" min="1" max="5" class="rating-input">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Active Participation of Learners</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">
+                                <input type="number" name="activeParticipation_session1" min="1" max="5" class="rating-input">
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">
+                                <input type="number" name="activeParticipation_session2" min="1" max="5" class="rating-input">
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">
+                                <input type="number" name="activeParticipation_session3" min="1" max="5" class="rating-input">
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">
+                                <input type="number" name="activeParticipation_session4" min="1" max="5" class="rating-input">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Use of Visual Aids</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">
+                                <input type="number" name="visualAids_session1" min="1" max="5" class="rating-input">
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">
+                                <input type="number" name="visualAids_session2" min="1" max="5" class="rating-input">
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">
+                                <input type="number" name="visualAids_session3" min="1" max="5" class="rating-input">
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">
+                                <input type="number" name="visualAids_session4" min="1" max="5" class="rating-input">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Relevance of Subject to Work</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">
+                                <input type="number" name="relevanceToWork_session1" min="1" max="5" class="rating-input">
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">
+                                <input type="number" name="relevanceToWork_session2" min="1" max="5" class="rating-input">
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">
+                                <input type="number" name="relevanceToWork_session3" min="1" max="5" class="rating-input">
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">
+                                <input type="number" name="relevanceToWork_session4" min="1" max="5" class="rating-input">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Place (Environment/Venue)</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">
+                                <input type="number" name="place_session1" min="1" max="5" class="rating-input">
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">
+                                <input type="number" name="place_session2" min="1" max="5" class="rating-input">
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">
+                                <input type="number" name="place_session3" min="1" max="5" class="rating-input">
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">
+                                <input type="number" name="place_session4" min="1" max="5" class="rating-input">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Use of relevant Examples</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">
+                                <input type="number" name="relevantExamples_session1" min="1" max="5" class="rating-input">
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">
+                                <input type="number" name="relevantExamples_session2" min="1" max="5" class="rating-input">
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">
+                                <input type="number" name="relevantExamples_session3" min="1" max="5" class="rating-input">
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">
+                                <input type="number" name="relevantExamples_session4" min="1" max="5" class="rating-input">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Knowledge of Subject</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">
+                                <input type="number" name="knowledgeOfSubject_session1" min="1" max="5" class="rating-input">
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">
+                                <input type="number" name="knowledgeOfSubject_session2" min="1" max="5" class="rating-input">
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">
+                                <input type="number" name="knowledgeOfSubject_session3" min="1" max="5" class="rating-input">
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">
+                                <input type="number" name="knowledgeOfSubject_session4" min="1" max="5" class="rating-input">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Treats Participants with Dignity and Respect</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">
+                                <input type="number" name="dignityRespect_session1" min="1" max="5" class="rating-input">
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">
+                                <input type="number" name="dignityRespect_session2" min="1" max="5" class="rating-input">
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">
+                                <input type="number" name="dignityRespect_session3" min="1" max="5" class="rating-input">
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">
+                                <input type="number" name="dignityRespect_session4" min="1" max="5" class="rating-input">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Variety and Appropriateness of Training Methods Used</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">
+                                <input type="number" name="trainingMethods_session1" min="1" max="5" class="rating-input">
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">
+                                <input type="number" name="trainingMethods_session2" min="1" max="5" class="rating-input">
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">
+                                <input type="number" name="trainingMethods_session3" min="1" max="5" class="rating-input">
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">
+                                <input type="number" name="trainingMethods_session4" min="1" max="5" class="rating-input">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="p-6 bg-gray-50 rounded-lg">
+            <h2 class="text-xl font-semibold text-gray-700 mb-4">Open-ended Feedback</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label for="mostLiked" class="block text-sm font-medium text-gray-700">Most liked about the facilitator (for each session):</label>
+                    <div class="space-y-2 mt-2">
+                        <textarea id="mostLiked_session1" name="mostLiked_session1" rows="3" placeholder="Session 1" class="shadow-sm focus:ring-blue-500 focus:border-blue-500 mt-1 block w-full sm:text-sm border border-gray-300 rounded-md p-2"></textarea>
+                        <textarea id="mostLiked_session2" name="mostLiked_session2" rows="3" placeholder="Session 2" class="shadow-sm focus:ring-blue-500 focus:border-blue-500 mt-1 block w-full sm:text-sm border border-gray-300 rounded-md p-2"></textarea>
+                        <textarea id="mostLiked_session3" name="mostLiked_session3" rows="3" placeholder="Session 3" class="shadow-sm focus:ring-blue-500 focus:border-blue-500 mt-1 block w-full sm:text-sm border border-gray-300 rounded-md p-2"></textarea>
+                        <textarea id="mostLiked_session4" name="mostLiked_session4" rows="3" placeholder="Session 4" class="shadow-sm focus:ring-blue-500 focus:border-blue-500 mt-1 block w-full sm:text-sm border border-gray-300 rounded-md p-2"></textarea>
+                    </div>
+                </div>
+                <div>
+                    <label for="suggestions" class="block text-sm font-medium text-gray-700">Suggestions on areas of improvement (for each session):</label>
+                    <div class="space-y-2 mt-2">
+                        <textarea id="suggestions_session1" name="suggestions_session1" rows="3" placeholder="Session 1" class="shadow-sm focus:ring-blue-500 focus:border-blue-500 mt-1 block w-full sm:text-sm border border-gray-300 rounded-md p-2"></textarea>
+                        <textarea id="suggestions_session2" name="suggestions_session2" rows="3" placeholder="Session 2" class="shadow-sm focus:ring-blue-500 focus:border-blue-500 mt-1 block w-full sm:text-sm border border-gray-300 rounded-md p-2"></textarea>
+                        <textarea id="suggestions_session3" name="suggestions_session3" rows="3" placeholder="Session 3" class="shadow-sm focus:ring-blue-500 focus:border-blue-500 mt-1 block w-full sm:text-sm border border-gray-300 rounded-md p-2"></textarea>
+                        <textarea id="suggestions_session4" name="suggestions_session4" rows="3" placeholder="Session 4" class="shadow-sm focus:ring-blue-500 focus:border-blue-500 mt-1 block w-full sm:text-sm border border-gray-300 rounded-md p-2"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-8 text-center">
+            <button type="submit" class="inline-flex justify-center py-2 px-6 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                Submit Feedback
+            </button>
+        </div>
+    </div>
+</div>
